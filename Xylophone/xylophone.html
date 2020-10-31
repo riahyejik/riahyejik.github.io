@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xylophone</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" />
+</head>
+
+<body>
+  <h1>Let's Play Xylophone </h1>
+  <div class="parts">
+    <button class="bar"></button>
+    <button class="a part">a</button>
+    <button class="s part">s</button>
+    <button class="d part">d</button>
+    <button class="f part">f</button>
+    <button class="g part">g</button>
+    <button class="h part">h</button>
+    <button class="j part">j</button>
+    <button class="k part">k</button>
+  </div>
+  <div class="musics">
+    <button class="aWholeNewWorld music">A Whole New World</button>
+  </div>
+  <div class="projects">
+    <button class="btn" onclick="goBack()">Go Back</button>
+
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+    </script>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
