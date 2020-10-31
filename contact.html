@@ -34,8 +34,8 @@
     <section class="contacts">
         <h1>Contact Me</h1>
         <div class="container">
-            <form id="contact-form">
-                <div class="form-group">
+            <form action="https://formspree.io/f/xrgokqyo" method="post" id="contact-form">
+                <!-- <div class="form-group"> -->
                     <label>Name</label>
                     <input
                       type="text"
@@ -45,8 +45,8 @@
                       placeholder="Enter your name"
                       required
                     />
-                  </div>
-                  <div class="form-group">
+                  <!-- </div>
+                  <div class="form-group"> -->
                     <label>Email</label>
                     <input
                       type="email"
@@ -56,20 +56,19 @@
                       placeholder="Enter your Email"
                       required
                     />
-                  </div>
+                  <!-- </div>
           
-                  <div class="form-group">
+                  <div class="form-group"> -->
                     <label>Send me a message!</label>
-                    <textarea placeholder="Enter your message here..."
-></textarea>
-                  </div>
+                    <textarea name="message" placeholder="Enter your message here..."></textarea>
+                  <!-- </div>
               
-                  <div class="form-group">
-                    <input type="submit"><a href="mailto:ria.hyejik@gmail.com"></a>
+                  <div class="form-group"> -->
+                    <input type="submit" name="submit" value="Send">
                     <!-- <button onclick="location.href='mailto:ria.hyejik@gmail.com';" class="btn" type="submit" id="submit" class="submit-button"> -->
                       <!-- Submit
                     </button> -->
-                  </div>
+                  <!-- </div> -->
             </form>
         </div>
     </section>
