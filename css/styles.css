@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+*:before,
+*:after {
+ box-sizing: border-box;
+}
+
 :root {
   --Sacramento: "Sacramento", cursive;
   --Merriweather: "Merriweather", serif;
@@ -12,7 +17,7 @@
   --ButtonColor: rgb(66, 68, 53);
 }
 
-header, section {
+header, body, section {
   overflow-x: hidden;
 }
 
@@ -115,22 +120,6 @@ p {
   background-color: var(--Project_Color);
 }
 
-/* responsive style */
-@media only screen and (max-width: 768px) {
-  header .navbar-brand {
-    padding-left: 1rem;
-  }
-  .profile .row .col-md-6 {
-    position: initial;
-    width: initial;
-    height: initial;
-  }
-  .profile .row .col-md-6 ul {
-    padding: 0;
-    list-style: none;
-  }
-}
-
 /* projects */
 
 .projects {
@@ -140,7 +129,8 @@ p {
 }
 
 .projects .row {
-  padding-left: 15rem;
+  position: relative;
+  width: 100%;
 }
 
 .projects h1 {
@@ -241,4 +231,35 @@ footer a {
 
 .footer a:hover {
     color: var(--Heading_Color);
+}
+
+
+/* responsive style */
+
+@media (max-width: 768px) {
+  .projects .row {
+    position: absolute;
+    width: 70%;
+    left: 15%;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .projects .row {
+    position: absolute;
+    left: 13%;
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  .projects .row {
+    position: absolute;
+    left: 13%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .projects .row {
+    position: absolute;
+    left: 9%;
+  }
 }
