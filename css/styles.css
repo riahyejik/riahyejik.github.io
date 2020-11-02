@@ -55,7 +55,7 @@ h3 {
 }
 
 p {
-  line-height: 1.5;
+  line-height: 1;
 }
 
 /* navigation bar */
@@ -84,7 +84,7 @@ p {
 }
 
 .profile h1 {
-  padding-top: 5rem;
+  padding-top: 2rem;
 }
 
 .profile .row .col-md-6 .profile-picture img {
@@ -95,18 +95,26 @@ p {
   border-radius: 50%;
 }
 
-.profile .row .col-md-6 p {
-  font-size: 1em;
+.profile ul {
+  color: black;
 }
 
-/* .profile .row .col-md-6 ul {
-  list-style: none;
-} */
+.profile .row .col-md-6 p {
+  color: black;
+  font-size: 1.5rem;
+}
 
-.profile .row .col-md-6 p li {
-  color: rgba(0, 0, 0, 0.6);
-  font-size: 1em;
+.profile .container .row .col-md-4 {
+  /* color: rgba(0, 0, 0, 0.6); */
+  font-size: 1.3rem;
   display: inline-block;
+  padding-bottom: .5rem;
+}
+.profile .container .row .col-md-6 {
+  /* color: rgba(0, 0, 0, 0.6); */
+  font-size: 1.3rem;
+  display: inline-block;
+  padding-bottom: .5rem;
 }
 
 .profile .row .col-md-6 .btn {
