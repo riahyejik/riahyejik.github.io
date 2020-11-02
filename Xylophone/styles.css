@@ -1,4 +1,4 @@
-body {
+.body-container {
   text-align: center;
   background-color: #4e7e60;
 }
@@ -19,38 +19,6 @@ h1 {
   width: 60px;
   height: 200px;
   background: #ff6663;
-}
-
-.bar {
-  background: transparent;
-  border: none !important;
-  font-size: 0;
-}
-
-.bar::before {
-  content: "";
-  position: absolute;
-  top: 25%;
-  right: auto;
-  width: 560px;
-  height: 20px;
-  -webkit-transform: translateY(-10px) rotate(3deg);
-  background-color: #d58c3f;
-  box-shadow: 0 3px 4px 0 #dbedf3;
-  z-index: -1;
-}
-
-.bar::after {
-  content: "";
-  position: absolute;
-  bottom: auto;
-  left: auto;
-  width: 560px;
-  height: 20px;
-  -webkit-transform: translateY(10px) rotate(-3deg);
-  background-color: #d58c3f;
-  box-shadow: 0 3px 4px 0 #dbedf3;
-  z-index: -1;
 }
 
 .s {
@@ -127,9 +95,9 @@ h1 {
 .music {
   position: relative;
   outline: none;
-  font-size: .7rem;
+  font-size: 1rem;
   font-family: "Arvo", cursive;
-  line-height: 1.5;
+  line-height: 2rem;
   font-weight: 300;
   color: #5a3e7e;
   text-shadow: 1px 0 #235768;

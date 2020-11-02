@@ -5,14 +5,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Xylophone</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" />
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <p class="navbar-brand">Xylophone</p>
+      </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="https://riahyejik.github.io/projects.html">Back to Projects</a></li>
+        </ul>
+    </div>
+  </nav>
 </head>
 
-<body>
+<body class="body-container">
   <h1>Let's Play Xylophone </h1>
   <div class="parts">
-    <button class="bar"></button>
     <button class="a part">a</button>
     <button class="s part">s</button>
     <button class="d part">d</button>
@@ -25,18 +35,13 @@
   <div class="musics">
     <button class="aWholeNewWorld music">A Whole New World</button>
   </div>
-  <div class="projects">
-    <button class="btn" onclick="goBack()">Go Back</button>
-
-    <script>
-      function goBack() {
-        window.history.back();
-      }
-    </script>
-  </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="index.js"></script>
 </body>
+
+<footer>
+  <p>Created by Hyeji Kim</p>
+</footer>
 
 </html>
