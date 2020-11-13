@@ -2,11 +2,6 @@
     box-sizing: border-box;
 }
 
-*:before,
-*:after {
- box-sizing: border-box;
-}
-
 :root {
   --Sacramento: "Sacramento", cursive;
   --Merriweather: "Merriweather", serif;
@@ -36,14 +31,14 @@ h1 {
   font-size: 4.5rem;
   margin-top: 5rem auto 0 auto;
   color: #473018;
-  font-family: "Sacramento", cursive;
+  font-family: var(--Sacramento);
   text-align: center;
   font-weight: 600;
 }
 
 h2 {
   color: #192929;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--Montserrat);
   font-size: 2rem;
   font-weight: normal;
   padding: 10px;
@@ -51,11 +46,11 @@ h2 {
 
 h3 {
   color: var(--Heading_Color);
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--Montserrat);
 }
 
 p {
-  line-height: 1;
+  line-height: 1.5;
 }
 
 /* navigation bar */
@@ -83,16 +78,25 @@ p {
   padding-top: 30px;
 }
 
-.profile h1 {
+/* .profile h1 {
   padding-top: 2rem;
+} */
+
+.profile .row .col-md-4 .profile-picture img {
+  opacity: 85%;
+  width: 100%;
+  border-radius: 10%;
+  margin-left: 20%;
 }
 
-.profile .row .col-md-6 .profile-picture img {
-  padding-top: 4rem;
-  margin-left: 15%;
-  opacity: 85%;
-  width: 70%;
-  border-radius: 50%;
+.profile .aboutme {
+  background-color: rgb(255, 255, 255, 0.5);
+  border-radius: 10%;
+  font-size: 1.3rem;
+  display: inline-block;
+  margin-left: 10%;
+  padding-left: 3rem;
+  padding-bottom: .5rem;
 }
 
 .profile ul {
@@ -104,21 +108,9 @@ p {
   font-size: 1.5rem;
 }
 
-.profile .container .row .col-md-4 {
-  /* color: rgba(0, 0, 0, 0.6); */
-  font-size: 1.3rem;
-  display: inline-block;
-  padding-bottom: .5rem;
-}
-.profile .container .row .col-md-6 {
-  /* color: rgba(0, 0, 0, 0.6); */
-  font-size: 1.3rem;
-  display: inline-block;
-  padding-bottom: .5rem;
-}
-
 .profile .row .col-md-6 .btn {
   margin-top: 3rem;
+  margin-bottom: 3rem;
   border-radius: 20px;
   background-color: var(--ButtonColor);
   color: whitesmoke;
@@ -258,6 +250,16 @@ footer a {
   .projects .row {
     position: absolute;
     left: 13%;
+  }
+
+  footer {
+    clear: both;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    text-align: center;
+    margin-top: -0px;
   }
 }
 
